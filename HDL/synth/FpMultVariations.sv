@@ -6,20 +6,20 @@ module FpMultVariations
     // W_FP_THRESHHOLD = W_MANTISSA + W_EXPONENT + 1
     localparam W_FP_THRESHOLD = 16,
     // mantissa min/max boundries
-    localparam MAN_MAX = W_FP_NUMBER-3,
+    localparam MAN_MAX = W_FP_THRESHOLD-3,
     localparam MAN_MIN = 3,
     // exponent min/max boundries
-    localparam EXP_MAx = W_FP_NUMBER-3,
+    localparam EXP_MAX = W_FP_THRESHOLD-3,
     localparam EXP_MIN = 3
     )
    (
-    input logic 		      clk;
-    input logic 		      rstn;
-    input logic [W_FP_THRESHOLD-1:0]  in_a          [EXP_MAX:EXP_MIN][MAN_MAX:MAN_MIN],
-    input logic [W_FP_THRESHOLD-1:0]  in_b          [EXP_MAX:EXP_MIN][MAN_MAX:MAN_MIN],
-    output logic [W_FP_THRESHOLD-1:0] out_x_reg     [EXP_MAX:EXP_MIN][MAN_MAX:MAN_MIN],
+    input logic 		      clk,
+    input logic 		      rstn,
+    input logic [W_FP_THRESHOLD-1:0]  in_a [EXP_MAX:EXP_MIN][MAN_MAX:MAN_MIN],
+    input logic [W_FP_THRESHOLD-1:0]  in_b [EXP_MAX:EXP_MIN][MAN_MAX:MAN_MIN],
+    output logic [W_FP_THRESHOLD-1:0] out_x_reg [EXP_MAX:EXP_MIN][MAN_MAX:MAN_MIN],
     output logic 		      underflow_reg [EXP_MAX:EXP_MIN][MAN_MAX:MAN_MIN],
-    output logic 		      overflow_reg  [EXP_MAX:EXP_MIN][MAN_MAX:MAN_MIN],
+    output logic 		      overflow_reg [EXP_MAX:EXP_MIN][MAN_MAX:MAN_MIN],
     output logic 		      exception_reg [EXP_MAX:EXP_MIN][MAN_MAX:MAN_MIN]
     );
    
