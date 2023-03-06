@@ -1,0 +1,11 @@
+// DESIGN
+../src/FpMult.sv
+../src/IntMult.sv
+
+// VERIF
+../verif/FpMultTb.sv
+../verif/IntMultTb.sv
+
+// SYNTH
+./FpMultVariations.sv
+./IntMultVariations.sv
