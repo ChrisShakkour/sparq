@@ -1,6 +1,10 @@
 // DESIGN
 ../src/FpMult.sv
 ../src/IntMult.sv
+../src/IntAdder.sv
+../src/FpAdder.sv
+../src/IntProccessingElement.sv
+../src/FpProccessingElement.sv
 
 // VERIF
 ../verif/FpMultTb.sv
