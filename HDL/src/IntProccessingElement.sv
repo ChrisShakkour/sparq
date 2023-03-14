@@ -1,13 +1,14 @@
 /*
  
  */
+
 `timescale 1ns/1ns
 
 module IntProccessingElement
   #(
     parameter integer  W_IN_A =8,
     parameter integer  W_IN_B =16,
-    localparam integer W_OUT_X =W_IN_B+W_IN_A
+    localparam integer W_OUT_X =W_IN_B + W_IN_A
     )
    (
     input logic 	       clk,
@@ -18,7 +19,7 @@ module IntProccessingElement
     input logic [W_IN_A-1:0]   in_a,
     input logic [W_IN_B-1:0]   in_b,
     output logic [W_OUT_X-1:0] out_x,
-    output logic 	       adder_overflow	       
+    output logic 	       overflow	       
     );
 
    logic [W_OUT_X-1:0] 	       mult_results;
@@ -26,7 +27,7 @@ module IntProccessingElement
    logic [W_OUT_X-1:0] 	       partial_sum;
 
    assign out_x          = partial_sum;
-   assign adder_overflow = adder_result[W_OUT_X];
+   assign overflow       = adder_result[W_OUT_X];
    
    always_ff @(posedge clk or negedge rstn) begin
       if(~rstn)         partial_sum <= '0;

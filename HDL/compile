@@ -1,2 +1,2 @@
 vlib.exe work
-vlog.exe -f ../RtlModules.vfile -sv
+vlog.exe -f ./RtlModules.vfile -sv

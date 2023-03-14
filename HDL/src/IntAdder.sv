@@ -10,7 +10,7 @@ module IntAdder
     parameter integer  W_IN_A =8,
     parameter integer  W_IN_B =16,
     localparam integer W_MAX_OP = ((W_IN_A > W_IN_B) ? W_IN_A : W_IN_B),
-    localparam integer W_OUT_X = W_MAX_OP+1;
+    localparam integer W_OUT_X = W_MAX_OP + 1
     )
   (
    input logic [W_IN_A-1:0]   in_a, //signed
@@ -37,6 +37,6 @@ module IntAdder
   assign b_pre_adder = (sign_of_b ? -b_extended : b_extended);
 
   // result
-  out_x = a_pre_adder + b_pre_adder;
+  assign out_x = a_pre_adder + b_pre_adder;
   
 endmodule // IntAdder
