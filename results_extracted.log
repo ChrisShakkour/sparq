@@ -1,0 +1,83 @@
+exp=1, man=1
+* Acc@1 0.130 Acc@5 0.518
+
+exp=2, man=2
+* Acc@1 0.032 Acc@5 0.386
+
+exp=6, man=6
+* Acc@1 69.866 Acc@5 89.110
+
+exp=4, man=3
+* Acc@1 69.494 Acc@5 88.910
+
+exp=5, man=3
+* Acc@1 69.492 Acc@5 88.870
+
+exp=6, man=3
+* Acc@1 69.454 Acc@5 88.894
+
+exp=5, man=5
+* Acc@1 69.834 Acc@5 89.166
+
+exp=8, man=3
+* Acc@1 69.454 Acc@5 88.894
+
+exp=8, man=4
+* Acc@1 69.698 Acc@5 89.076
+
+exp=8, man=5
+* Acc@1 69.810 Acc@5 89.134
+
+exp=10, man=3
+* Acc@1 69.454 Acc@5 88.894
+
+exp=5, man=10
+* Acc@1 69.822 Acc@5 89.108
+
+exp=6, man=9
+* Acc@1 69.812 Acc@5 89.106
+
+exp=7, man=8
+* Acc@1 69.818 Acc@5 89.104
+
+exp=8, man=7
+* Acc@1 69.818 Acc@5 89.094
+
+exp=9, man=6
+* Acc@1 69.866 Acc@5 89.110
+
+exp=10, man=5
+* Acc@1 69.810 Acc@5 89.134
+
+exp=11, man=4
+* Acc@1 69.698 Acc@5 89.076
+
+exp=12, man=3
+* Acc@1 69.454 Acc@5 88.894
+
+exp=1, man=1
+* Acc@1 0.130 Acc@5 0.518
+
+exp=1, man=2
+* Acc@1 0.122 Acc@5 0.566
+
+exp=2, man=1
+* Acc@1 0.168 Acc@5 0.636
+
+exp=6, man=5
+* Acc@1 69.810 Acc@5 89.134
+
+exp=5, man=6
+* Acc@1 69.874 Acc@5 89.112
+
+exp=7, man=6
+* Acc@1 69.866 Acc@5 89.110
+
+exp=6, man=7
+* Acc@1 69.818 Acc@5 89.094
+
+exp=5, man=10
+* Acc@1 69.822 Acc@5 89.108
+
+exp=10, man=5
+* Acc@1 69.810 Acc@5 89.134
